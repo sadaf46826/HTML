@@ -1,0 +1,59 @@
+<html>
+<head>
+    <title>Registration Form</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form action="#" method="post" enctype="multipart/form-data" style="max-width: 500px; margin: auto; padding: 20px; border: 2px solid;">
+       
+        <label for="fullName" style="display: block; margin-bottom: 5px; font-weight: bold;">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" required style="width: 100%; margin-bottom: 15px; padding: 10px; border: 1px solid #ccc;">
+
+        
+        <label for="email" style="display: block; margin-bottom: 5px; font-weight: bold;">Email:</label>
+        <input type="email" id="email" name="email" placeholder="example@domain.com" required style="width: 100%; margin-bottom: 15px; padding: 10px; border: 1px solid #ccc;">
+
+       
+        <label for="password" style="display: block; margin-bottom: 5px; font-weight: bold;">Password:</label>
+        <input type="password" id="password" name="password" minlength="6" required style="width: 100%; margin-bottom: 15px; padding: 10px; border: 1px solid #ccc;">
+
+       
+        <label style="display: block; margin-bottom: 5px; font-weight: bold;">Gender:</label>
+        <label><input type="radio" name="gender" value="male" required> Male</label>
+        <label><input type="radio" name="gender" value="female"> Female</label>
+        <label><input type="radio" name="gender" value="other"> Other</label>
+
+        <br>
+        <label style="margin-top: 15px;"><input type="checkbox" name="terms" required> I agree to the Terms and Conditions</label>
+
+        <label for="country" style="display: block; margin-bottom: 5px; font-weight: bold; margin-top: 15px;">Country:</label>
+        <select id="country" name="country" style="width: 100%; margin-bottom: 15px; padding: 10px; border: 1px solid #ccc;">
+            <option value="">Select your country</option>
+            <option value="usa">United States</option>
+            <option value="india">India</option>
+            <option value="uk">United Kingdom</option>
+            <option value="canada">Canada</option>
+        </select>
+
+        <label for="age" style="display: block; margin-bottom: 5px; font-weight: bold;">Age:</label>
+        <input type="number" id="age" name="age" min="18" max="100" required style="width: 100%; margin-bottom: 15px; padding: 10px; border: 1px solid #ccc;">
+
+        <label for="dob" style="display: block; margin-bottom: 5px; font-weight: bold;">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required style="width: 100%; margin-bottom: 15px; padding: 10px; border: 1px solid #ccc;">
+
+        <label for="profilePicture" style="display: block; margin-bottom: 5px; font-weight: bold;">Profile Picture:</label>
+        <input type="file" id="profilePicture" name="profilePicture" accept="image/*" style="width: 100%; margin-bottom: 15px;">
+
+        <label for="bio" style="display: block; margin-bottom: 5px; font-weight: bold;">Short Bio:</label>
+        <textarea id="bio" name="bio" rows="4" placeholder="Tell us something about yourself..." style="width: 100%; margin-bottom: 15px; padding: 10px; border: 1px solid #ccc;"></textarea>
+
+        <label for="website" style="display: block; margin-bottom: 5px; font-weight: bold;">Website:</label>
+        <input type="url" id="website" name="website" placeholder="https://example.com" style="width: 100%; margin-bottom: 15px; padding: 10px; border: 1px solid #ccc;">
+
+        <label for="favColor" style="display: block; margin-bottom: 5px; font-weight: bold;">Favorite Color:</label>
+        <input type="color" id="favColor" name="favColor" style="width: 100%; margin-bottom: 15px;">
+
+        <button type="submit" style="width: 100%; padding: 10px; background-color: #4CAF50; color: white; cursor: pointer;">Register</button>
+    </form>
+</body>
+</html>
